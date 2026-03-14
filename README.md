@@ -21,4 +21,4 @@ JaCoCo
 | JaCoCo     |  0.8.7  |
 
 
-## Оценка покрытия "mvn verify"  
+## Оценка покрытия "mvn verify"  .

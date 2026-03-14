@@ -66,7 +66,7 @@ public class BurgerPriceTest {
     }
 
     @Test
-    public void testGetPrice() {
+    public void testGetPrice() {  //тест получения цены
         float actualPrice = burger.getPrice();
 
         assertEquals(expectedPrice, actualPrice, 0.001f);

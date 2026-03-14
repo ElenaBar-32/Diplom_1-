@@ -35,7 +35,7 @@ public class BurgerTest {
 
 
     @Test
-    public void getPriceTest() {
+    public void getPriceTest() {   // все тесты
 
         Mockito.when(bun.getName()).thenReturn("Black Bun");
         Mockito.when(bun.getPrice()).thenReturn(100f);
