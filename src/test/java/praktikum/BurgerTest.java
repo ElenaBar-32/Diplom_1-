@@ -1,6 +1,5 @@
 package praktikum;
 
-
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -8,7 +7,6 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.MockitoJUnitRunner;
-
 import static org.junit.Assert.assertEquals;
 
 @RunWith(MockitoJUnitRunner.class)
@@ -32,7 +30,6 @@ public class BurgerTest {
         MockitoAnnotations.openMocks(this);
         burger = new Burger();
     }
-
 
     @Test
     public void getPriceTest() {   // все тесты
