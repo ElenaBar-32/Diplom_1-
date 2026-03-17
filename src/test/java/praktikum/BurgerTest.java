@@ -61,7 +61,6 @@ public class BurgerTest {
                                   String.format("%nPrice: %f%n", burger.getPrice());
         assertEquals(expectedReceipt, actualReceipt);
     }
-
     @Test
     public void addIngredientTest () {
        burger.addIngredient(filling);

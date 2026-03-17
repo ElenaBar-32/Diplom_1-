@@ -6,7 +6,6 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.mockito.Spy;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
@@ -21,8 +20,7 @@ public class BurgerPriceTest {
     @Mock
     private Bun bun;
 
-    @Spy
-    private Burger burger;
+   private Burger burger;
 
 
     public float bunPrice;
@@ -53,7 +51,7 @@ public class BurgerPriceTest {
     public void setUp() {
 
         MockitoAnnotations.openMocks(this);
-        this.burger = new Burger();
+        burger = new Burger();
 
         when(bun.getPrice()).thenReturn(bunPrice);
 
@@ -65,9 +63,8 @@ public class BurgerPriceTest {
     }
 
     @Test
-    public void testGetPrice() {  //тест получения цены
+    public void testGetPrice() {//тест получения цены
         float actualPrice = burger.getPrice();
-
         assertEquals(expectedPrice, actualPrice, 0.001f);
     }
 }
